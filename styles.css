@@ -1,0 +1,216 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f6f9fc;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Page Styles */
+.home-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.home-container .logo {
+    width: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-container h1 {
+    font-size: 2.8em;
+    margin: 20px 0;
+    color: #007bff;
+}
+
+.home-container .description {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.button-group {
+    margin-top: 30px;
+}
+
+.button-group a {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border-radius: 50px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-group a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Form & Input Styles */
+form {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+input, select, button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    font-size: 1em;
+    color: #555;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+button.btn-primary {
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.btn-primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+button.btn-danger {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.btn-danger:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Dashboard */
+#dashboard-section {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+#dashboard-section p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+#dashboard-section span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Airtable Data Display */
+.data-container {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 2px solid #007bff;
+}
+
+.data-container h3 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.data-container p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* List Styling */
+li {
+    font-size: 1em;
+    color: #555;
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+/* Mobile First */
+@media (max-width: 768px) {
+    .home-container {
+        padding: 20px;
+    }
+
+    .button-group a {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    input, select, button {
+        padding: 12px;
+    }
+}
+
+/* Hover Effects */
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover, select:hover {
+    border-color: #0056b3;
+}
